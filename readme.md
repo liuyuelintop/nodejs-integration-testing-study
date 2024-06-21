@@ -2,6 +2,22 @@
 
 This project is designed to help you learn and practice integration testing in a Node.js environment using Express and MongoDB. It includes various features and testing scenarios such as setting up a test database, validating inputs, testing routes with parameters, and handling authorization.
 
+## Project Overview
+
+I am currently taking "The Complete Node.js Course" by Code with Mosh, and I am learning the integration testing section. Due to many deprecation issues with the provided source code, I had to initialize a new project to properly follow along with the integration section. I am referencing his instructional videos and code while working through this project. This is the motivation behind creating this new project.
+
+## Challenges and Solutions
+
+1. **Deprecation Issues** :
+   - Updated deprecated dependencies to ensure project stability and security.
+2. **Integration Test Port Conflicts** :
+   - Ensured each test file uses a different port to avoid conflicts.
+   - Attempted to use `get-port` for dynamic port allocation but faced syntax errors. This will be revisited in the future.
+3. **Joi Validation** :
+   - Updated Joi validation method to `schema.validate` to comply with the newer version.
+4. **Error Handling Middleware** :
+   - Implemented error handling middleware to catch unhandled errors and return a 500 status code.
+
 ## Project Setup
 
 ### Prerequisites
@@ -61,6 +77,8 @@ To run the integration tests, use:
 ```bash
 npm test
 ```
+
+This command runs Jest with the `--watchAll`, `--verbose`, and `--coverage` flags, providing a comprehensive testing experience.
 
 ## Project Structure
 
@@ -141,9 +159,21 @@ This project covers the following topics:
 7. Implementing and testing authorization middleware.
 8. Writing clean and maintainable test code.
 
-## Motivation
+## Recap: Integration Tests
 
-I am currently taking the "The Complete Node.js Course" by Code with Mosh, and I am learning the integration testing section. Due to many deprecation issues with the provided source code, I had to initialize a new project to properly follow along with the integration section. I am referencing his instructional videos and code while working through this project. This is the motivation behind creating this new project.
+In this section, I learned that:
+
+- **Unit tests** are easy to write, fast to execute, and are ideal for testing functions with minimal or zero dependency on external resources.
+- The more you use **mock functions** , the more your tests get coupled to the current implementation. Changing this implementation in the future may break your tests. If you find yourself doing too much mocking, it's time to replace your unit test with an integration test.
+- With **integration tests** , we test our application with a real database. It's a best practice to separate your test database from the development or production databases.
+- You should write each integration test as if it is the only test in the world. Start with a clean state (database). Populate the database only with the data required by the test, nothing more, nothing less. Clean up after your test using the `afterEach` function.
+- Run Jest with the `--coverage` flag to get a code coverage report.
+
+## Future Work
+
+- Resolve the dynamic port allocation issue using `get-port` or an alternative method.
+- Enhance test coverage and further refine error handling mechanisms.
+- Continue exploring more advanced testing strategies and tools to improve overall test effectiveness.
 
 ## Conclusion
 
