@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "yourPrivateKey",
+  "db": "mongodb://localhost/advanced-integration-testing"
+}
