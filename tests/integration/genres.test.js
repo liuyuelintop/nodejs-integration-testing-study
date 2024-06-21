@@ -1,5 +1,5 @@
 const request = require("supertest");
-// const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 const { Genre } = require("../../models/genre");
 let server;
 
@@ -28,5 +28,18 @@ describe("/api/genres", () => {
       expect(res.body.some((g) => g.name === "Horror")).toBeTruthy();
       expect(res.body.some((g) => g.name === "Comedy")).toBeTruthy();
     });
+  });
+
+  it("should return 404 if invalid id is passed", async () => {
+    const res = await request(server).get("/api/genres/1");
+
+    expect(res.status).toBe(404);
+  });
+
+  it("should return 404 if no genre with the given id exists", async () => {
+    const id = new mongoose.Types.ObjectId();
+    const res = await request(server).get("/api/genres/" + id);
+
+    expect(res.status).toBe(404);
   });
 });
