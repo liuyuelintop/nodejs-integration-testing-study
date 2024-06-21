@@ -30,16 +30,27 @@ describe("/api/genres", () => {
     });
   });
 
-  it("should return 404 if invalid id is passed", async () => {
-    const res = await request(server).get("/api/genres/1");
+  describe("GET /:id", () => {
+    it("should return 404 if invalid id is passed", async () => {
+      const res = await request(server).get("/api/genres/1");
 
-    expect(res.status).toBe(404);
+      expect(res.status).toBe(404);
+    });
+
+    it("should return 404 if no genre with the given id exists", async () => {
+      const id = new mongoose.Types.ObjectId();
+      const res = await request(server).get("/api/genres/" + id);
+
+      expect(res.status).toBe(404);
+    });
   });
 
-  it("should return 404 if no genre with the given id exists", async () => {
-    const id = new mongoose.Types.ObjectId();
-    const res = await request(server).get("/api/genres/" + id);
-
-    expect(res.status).toBe(404);
+  describe("POST /", () => {
+    it("should return a 401 if client is not logged in", async () => {
+      const res = await request(server)
+        .post("/api/genres")
+        .send({ name: "genre1" });
+      expect(res.status).toBe(401);
+    });
   });
 });
