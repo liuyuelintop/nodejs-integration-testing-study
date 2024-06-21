@@ -1,4 +1,5 @@
 const request = require("supertest");
+const { User } = require("../../models/user");
 let server;
 
 describe("/api/users", () => {
@@ -6,8 +7,9 @@ describe("/api/users", () => {
     process.env.PORT = 3001; // 设置测试端口为 3001
     server = require("../../index");
   });
-  afterEach(() => {
-    server.close();
+  afterEach(async () => {
+    await server.close();
+    await User.deleteMany({});
   });
 
   describe("POST /", () => {
