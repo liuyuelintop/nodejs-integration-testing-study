@@ -4,7 +4,7 @@ const request = require("supertest");
 
 describe("auth middleware", () => {
   beforeEach(() => {
-    process.env.PORT = 3001;
+    process.env.PORT = 3002;
     server = require("../../index");
   });
   afterEach(async () => {

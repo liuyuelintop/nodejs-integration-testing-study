@@ -6,7 +6,7 @@ let server;
 
 describe("/api/genres", () => {
   beforeEach(async () => {
-    process.env.PORT = 3001; // 设置测试端口为 3001
+    process.env.PORT = 3003; // 设置测试端口为 3001
     server = require("../../index");
   });
 
