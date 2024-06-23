@@ -52,9 +52,9 @@ describe("/apis/returns", () => {
     const res = await exec();
     expect(res.status).toBe(400);
   });
-  it("should return 400 if movieID is not provided!", async () => {
-    movieId = "";
+  it("should return 404 if no rental found for this customer/movie", async () => {
+    await Rental.deleteMany();
     const res = await exec();
-    expect(res.status).toBe(400);
+    expect(res.status).toBe(404);
   });
 });
