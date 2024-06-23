@@ -2,12 +2,14 @@ const { Rental } = require("../../models/rental");
 const { User } = require("../../models/user");
 const mongoose = require("mongoose");
 const request = require("supertest");
+
 describe("/apis/returns", () => {
   let server;
   let customerId;
   let movieId;
   let rental;
   let token;
+
   const exec = () => {
     return request(server)
       .post("/api/returns")
@@ -33,10 +35,11 @@ describe("/apis/returns", () => {
         dailyRentalRate: 2,
       },
       dateOut: new Date(),
-      dateReturned: new Date(),
+      dateReturned: null, // 确保 dateReturned 是 null
     });
     await rental.save();
   });
+
   afterEach(async () => {
     await server.close();
     await Rental.deleteMany();
@@ -47,20 +50,28 @@ describe("/apis/returns", () => {
     const res = await exec();
     expect(res.status).toBe(401);
   });
+
   it("should return 400 if customerID is not provided!", async () => {
     customerId = "";
     const res = await exec();
     expect(res.status).toBe(400);
   });
+
   it("should return 404 if no rental found for this customer/movie", async () => {
     await Rental.deleteMany();
     const res = await exec();
     expect(res.status).toBe(404);
   });
+
   it("should return 400 if rental already processed", async () => {
     rental.dateReturned = new Date();
     await rental.save();
     const res = await exec();
     expect(res.status).toBe(400);
+  });
+
+  it("should return 200 if valid request", async () => {
+    const res = await exec();
+    expect(res.status).toBe(200);
   });
 });

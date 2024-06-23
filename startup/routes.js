@@ -3,7 +3,6 @@ const genres = require("../routes/genres");
 const users = require("../routes/users");
 const returns = require("../routes/returns");
 const error = require("../middleware/error");
-
 module.exports = function (app) {
   app.use(express.json());
   app.use("/api/genres", genres);
