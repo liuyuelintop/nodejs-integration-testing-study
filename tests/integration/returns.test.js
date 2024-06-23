@@ -70,8 +70,11 @@ describe("/apis/returns", () => {
     expect(res.status).toBe(400);
   });
 
-  it("should return 200 if valid request", async () => {
+  it("should set the returnDate if input is valid", async () => {
     const res = await exec();
-    expect(res.status).toBe(200);
+    const rentalInDb = await Rental.findById(rental.id);
+    const diff = Date.now() - rentalInDb.dateReturned;
+
+    expect(diff).toBeLessThan(10 * 1000);
   });
 });
