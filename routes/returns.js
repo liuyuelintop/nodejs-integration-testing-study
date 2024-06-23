@@ -2,6 +2,7 @@ const { Rental } = require("../models/rental");
 const auth = require("../middleware/auth");
 const express = require("express");
 const router = express.Router();
+const moment = require("moment");
 
 router.post("/", auth, async (req, res) => {
   if (!req.body.customerId)
@@ -22,6 +23,8 @@ router.post("/", auth, async (req, res) => {
   }
 
   rental.dateReturned = Date.now();
+  const rentalDays = moment().diff(rental.dateOut, "days");
+  rental.rentalFee = rentalDays * rental.movie.dailyRentalRate;
   rental.save();
   return res.status(200).send();
 });
