@@ -2,9 +2,9 @@ const request = require("supertest");
 const mongoose = require("mongoose");
 const { Genre } = require("../../models/genre");
 const { User } = require("../../models/user");
-let server;
 
 describe("/api/genres", () => {
+  let server;
   beforeEach(async () => {
     process.env.PORT = 3003; // 设置测试端口为 3001
     server = require("../../index");
