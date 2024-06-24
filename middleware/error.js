@@ -1,7 +1,7 @@
-const winston = require("winston");
+const logger = require("../startup/logging");
 
 module.exports = function (err, req, res, next) {
-  winston.error(err.message, err);
+  logger.error(err.message, err); // 使用 logger.error 记录错误信息
 
   // error
   // warn
