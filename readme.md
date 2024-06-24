@@ -174,6 +174,7 @@ In this section, I learned that:
 - Resolve the dynamic port allocation issue using `get-port` or an alternative method.
 - Enhance test coverage and further refine error handling mechanisms.
 - Continue exploring more advanced testing strategies and tools to improve overall test effectiveness.
+- Deploy through Heroku
 
 ## Conclusion
 
