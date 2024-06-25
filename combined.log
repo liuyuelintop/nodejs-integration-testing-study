@@ -16,3 +16,83 @@
 {"level":"info","message":"Winston logging initialized...","service":"user-service"}
 {"level":"info","message":"Listening on port 3000...","service":"user-service"}
 {"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"error","message":"Could not connect to MongoDB... The provided mongoose instance is invalid","service":"user-service","stack":"Error: The provided mongoose instance is invalid\n    at Object.init (/Users/liuyuelin/Desktop/课外学习/Node/advanced-integration-testing/node_modules/fawn/lib/fawn.js:30:15)\n    at /Users/liuyuelin/Desktop/课外学习/Node/advanced-integration-testing/startup/db.js:12:12\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"error","message":"Could not connect to MongoDB... The provided mongoose instance is invalid","service":"user-service","stack":"Error: The provided mongoose instance is invalid\n    at Object.init (/Users/liuyuelin/Desktop/课外学习/Node/advanced-integration-testing/node_modules/fawn/lib/fawn.js:30:15)\n    at /Users/liuyuelin/Desktop/课外学习/Node/advanced-integration-testing/startup/db.js:12:12\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"error","message":"Could not connect to MongoDB... The provided mongoose instance is invalid","service":"user-service","stack":"Error: The provided mongoose instance is invalid\n    at Object.init (/Users/liuyuelin/Desktop/课外学习/Node/advanced-integration-testing/node_modules/fawn/lib/fawn.js:30:15)\n    at /Users/liuyuelin/Desktop/课外学习/Node/advanced-integration-testing/startup/db.js:12:12\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"error","message":"Could not connect to MongoDB... The provided mongoose instance is invalid","service":"user-service","stack":"Error: The provided mongoose instance is invalid\n    at Object.init (/Users/liuyuelin/Desktop/课外学习/Node/advanced-integration-testing/node_modules/fawn/lib/fawn.js:30:15)\n    at /Users/liuyuelin/Desktop/课外学习/Node/advanced-integration-testing/startup/db.js:12:12\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
+{"level":"info","message":"Winston logging initialized...","service":"user-service"}
+{"level":"info","message":"Listening on port 3000...","service":"user-service"}
+{"level":"info","message":"Connected to mongodb://localhost/advanced-integration-testing...","service":"user-service"}
